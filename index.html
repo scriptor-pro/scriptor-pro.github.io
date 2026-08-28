@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baudouin Van Humbeeck — Rédacteur &amp; développeur</title>
+  <meta name="description" content="Rédacteur senior et développeur autodidacte : accessibilité numérique, écriture et code.">
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=fraunces:600,700,900|inter:400,500,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <p class="kicker" id="kicker">ÉCRITURE · CODE · ACCESSIBILITÉ</p>
+    <h1>Baudouin Van Humbeeck</h1>
+    <p class="tagline">Trente ans à écrire pour être lu. Depuis quelques années, à coder pour que tout le monde puisse l'être.</p>
+    <hr class="rule">
+  </header>
+
+  <section class="chapo">
+    <p>
+      Rédacteur et journaliste de formation, j'ai passé l'essentiel de ma carrière
+      à produire et cadrer du contenu — presse, communication, web. Le virage vers
+      l'accessibilité numérique (WCAG, RGAA) m'a mené à apprendre à lire et écrire
+      du code, en autodidacte, pour auditer et corriger ce qui empêche un contenu
+      d'être vraiment accessible. Le code, chez moi, reste un outil au service de
+      l'écrit — pas une deuxième carrière qui aurait pris le pas sur la première.
+    </p>
+  </section>
+
+  <section class="projects" id="projects" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projets</h2>
+    <!-- Peuplé par script.js : boutons de filtre par rubrique (amélioration progressive) -->
+    <nav class="category-filter" id="category-filter" aria-label="Filtrer les projets par rubrique"></nav>
+
+    <div class="project-grid">
+
+      <article class="project-card" data-category="accessibilite">
+        <p class="project-kicker">Accessibilité</p>
+        <h3><a href="https://github.com/scriptor-pro/accessiform">accessiform</a></h3>
+        <p class="project-desc">Tous les types de champs de formulaire HTML compilés en un seul gabarit conforme WCAG.</p>
+        <p class="project-stack">HTML</p>
+      </article>
+
+      <article class="project-card" data-category="accessibilite">
+        <p class="project-kicker">Accessibilité</p>
+        <h3><a href="https://github.com/scriptor-pro/time2crack">time2crack</a></h3>
+        <p class="project-desc">Estimation avancée de la robustesse d'un mot de passe : interface multilingue, modélisation du temps d'attaque.</p>
+        <p class="project-stack">HTML / JavaScript</p>
+      </article>
+
+      <article class="project-card" data-category="productivite">
+        <p class="project-kicker">Neurodivergence &amp; productivité</p>
+        <h3><a href="https://github.com/scriptor-pro/qfqa">qfqa</a></h3>
+        <p class="project-desc">Emploi du temps pensé pour TDAH, spectre autistique ou les deux : n'affiche que les tâches du jour, selon l'énergie disponible.</p>
+        <p class="project-stack">Svelte</p>
+        <p class="project-links"><a href="https://qfqa.vercel.app">Démo</a></p>
+      </article>
+
+      <article class="project-card" data-category="productivite">
+        <p class="project-kicker">Neurodivergence &amp; productivité</p>
+        <h3><a href="https://github.com/scriptor-pro/quatorzaine">quatorzaine</a></h3>
+        <p class="project-desc">Planning quotidien sur quatorze jours glissants, pour profils neurodivergents.</p>
+        <p class="project-stack">JavaScript</p>
+        <p class="project-links"><a href="http://14.bvh.fyi/">Démo</a></p>
+      </article>
+
+      <article class="project-card" data-category="productivite">
+        <p class="project-kicker">Neurodivergence &amp; productivité</p>
+        <h3><a href="https://github.com/scriptor-pro/memo-tori">memo-tori</a></h3>
+        <p class="project-desc">Application de capture d'idées à la volée, avant qu'elles ne s'échappent.</p>
+        <p class="project-stack">Python</p>
+        <p class="project-links"><a href="https://scriptor-pro.github.io/memo-tori/">Démo</a></p>
+      </article>
+
+      <article class="project-card" data-category="ecriture">
+        <p class="project-kicker">Outils d'écriture</p>
+        <h3><a href="https://codeberg.org/baudouin/Jules">Jules</a></h3>
+        <p class="project-desc">Éditeur Markdown desktop pour rédiger et publier des articles vers un générateur de site statique via Git (Hugo, Jekyll, Astro, Eleventy, Pelican). Jeton d'accès stocké dans le trousseau natif de l'OS. En développement actif.</p>
+        <p class="project-stack">Rust / TypeScript · Tauri</p>
+      </article>
+
+      <article class="project-card" data-category="ecriture">
+        <p class="project-kicker">Outils d'écriture</p>
+        <h3><a href="https://github.com/scriptor-pro/velocitetxt">velocitetxt</a></h3>
+        <p class="project-desc">Application de prise de notes façon nvPY, écrite en Rust.</p>
+        <p class="project-stack">Rust</p>
+      </article>
+
+      <article class="project-card" data-category="ecriture">
+        <p class="project-kicker">Outils d'écriture</p>
+        <h3><a href="https://github.com/scriptor-pro/11ty-front-matter-generator">11ty-front-matter-generator</a></h3>
+        <p class="project-desc">Petit outil web pour générer le front-matter parfait avant de publier avec Eleventy.</p>
+        <p class="project-stack">HTML / JavaScript</p>
+      </article>
+
+      <article class="project-card" data-category="experimentation">
+        <p class="project-kicker">Expérimentation</p>
+        <h3><a href="https://github.com/scriptor-pro/terminal-theme-studio">terminal-theme-studio</a></h3>
+        <p class="project-desc">Atelier de création de thèmes pour terminal.</p>
+        <p class="project-stack">TypeScript</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="skills" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Compétences</h2>
+    <div class="skill-block">
+      <h3>Rédaction &amp; contenu</h3>
+      <p>Storytelling, SEO, journalisme, web copywriting</p>
+    </div>
+    <div class="skill-block">
+      <h3>Accessibilité &amp; audit</h3>
+      <p>WCAG 2.1, RGAA, HTML/CSS sémantique</p>
+    </div>
+    <div class="skill-block">
+      <h3>Développement</h3>
+      <p>HTML/CSS, JavaScript/TypeScript, Python, Svelte, notions de Rust</p>
+    </div>
+  </section>
+
+  <footer class="masthead-foot">
+    <div class="foot-col">
+      <h4>CV complet</h4>
+      <p><a href="https://cv.bvh.fyi">cv.bvh.fyi</a></p>
+    </div>
+    <div class="foot-col">
+      <h4>Profils</h4>
+      <p><a href="https://www.linkedin.com/in/baudouinvanhumbeeck">LinkedIn</a></p>
+      <p><a href="https://bsky.app/profile/bvh.fyi">Bluesky</a></p>
+      <p><a href="https://github.com/scriptor-pro">GitHub</a></p>
+    </div>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <p><a href="mailto:bvh@scriptor.pro">bvh@scriptor.pro</a></p>
+    </div>
+    <p class="foot-note">Dernière mise à jour : <span id="update-year">2026</span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
