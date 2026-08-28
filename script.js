@@ -18,12 +18,6 @@ function initDateBandeau() {
   kicker.appendChild(dateNode);
 }
 
-function initAnneeFooter() {
-  const anneeNode = document.getElementById('update-year');
-  if (!anneeNode) return;
-  anneeNode.textContent = new Date().getFullYear();
-}
-
 const RUBRIQUES = [
   { id: 'toutes', label: 'Toutes' },
   { id: 'accessibilite', label: 'Accessibilité' },
@@ -63,6 +57,5 @@ function initFiltreProjets() {
 
 document.addEventListener('DOMContentLoaded', () => {
   initDateBandeau();
-  initAnneeFooter();
   initFiltreProjets();
 });
