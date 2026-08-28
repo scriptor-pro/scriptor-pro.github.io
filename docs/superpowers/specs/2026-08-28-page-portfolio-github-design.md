@@ -51,10 +51,11 @@ trancher vers un seul poste.
   `https://scriptor-pro.github.io/`.
 - Site **une page**, HTML sémantique + CSS (Grid/Flexbox) + JS vanilla
   minimal.
-- Polices via Google Fonts : une serif pour les titres (**Fraunces**,
-  variable font, pour l'esthétique "titraille de journal") + une
-  sans-serif nette pour le texte courant (**Inter** ou **Source Sans
-  3**).
+- Polices via **fonts.bunny.net** (alternative à Google Fonts sans
+  tracking ni appel à des serveurs Google, cohérent avec l'exigence de
+  vie privée) : une serif pour les titres (**Fraunces**, variable
+  font, pour l'esthétique "titraille de journal") + une sans-serif
+  nette pour le texte courant (**Inter** ou **Source Sans 3**).
 - Dark mode : pris en charge via `prefers-color-scheme`, palette
   papier/encre (fond crème/blanc cassé en clair, fond charbon en
   sombre — pas de bleu corporate générique).
