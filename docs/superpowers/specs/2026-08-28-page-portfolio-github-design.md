@@ -74,7 +74,7 @@ trancher vers un seul poste.
 
 ### 1. En-tête / manchette
 
-- Bandeau kicker en haut : `ACCESSIBILITÉ · ÉCRITURE · CODE` + date du
+- Bandeau kicker en haut : `ÉCRITURE · CODE · ACCESSIBILITÉ` + date du
   jour générée dynamiquement (style "édition du jour").
 - Nom en gros titre serif façon manchette : "Baudouin Van Humbeeck".
 - Sous-titre-accroche courte et incisive, ton assumé, à rédiger avec
