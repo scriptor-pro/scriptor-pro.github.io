@@ -112,8 +112,12 @@ disponible). Sélection retenue :
   démo : scriptor-pro.github.io/memo-tori/
 
 **OUTILS D'ÉCRITURE**
-- `Ernest` — éditeur markdown pour générateurs de site statique, avec
-  publication intégrée. (Svelte)
+- `Jules` — éditeur Markdown desktop (Tauri 2 + Rust + React) pour
+  rédiger et publier des articles vers un générateur de site statique
+  via Git (Hugo, Jekyll, Astro, Eleventy, Pelican) ; PAT stocké dans le
+  keychain natif de l'OS. Projet en développement actif (v0.2.x).
+  (Rust/TypeScript) — hébergé sur Codeberg :
+  `codeberg.org/baudouin/Jules` (lien externe assumé, hors GitHub).
 - `velocitetxt` — application de prise de notes façon nvPY, en Rust.
   (Rust)
 - `11ty-front-matter-generator` — outil web pour générer le
@@ -128,6 +132,12 @@ projets marqués comme expérimentaux/assistés par IA dans leurs topics
 GitHub (ex. `vibe-coding` sur memo-tori) restent présentés sobrement,
 sans mention explicite de la méthode de création (ce n'est pas
 l'angle de la page).
+
+Cas particulier `Jules` : seul projet de la sélection hébergé hors
+GitHub (sur Codeberg). Le lien de sa carte pointe directement vers
+`codeberg.org/baudouin/Jules` plutôt que vers un miroir GitHub
+inexistant — assumé ouvertement comme un détail crédible d'un profil
+tech qui pratique plusieurs forges.
 
 ### 4. Compétences en bandeau (3 rubriques)
 
