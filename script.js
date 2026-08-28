@@ -24,6 +24,7 @@ const RUBRIQUES = [
   { id: 'productivite', label: 'Neurodivergence & productivité' },
   { id: 'ecriture', label: "Outils d'écriture" },
   { id: 'experimentation', label: 'Expérimentation' },
+  { id: 'sante', label: 'Santé & accessibilité alimentaire' },
 ];
 
 function appliquerFiltre(rubriqueId, cartes) {
