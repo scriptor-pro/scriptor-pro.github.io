@@ -27,15 +27,25 @@ const RUBRIQUES = [
   { id: 'sante', label: 'Santé & accessibilité alimentaire' },
 ];
 
-function appliquerFiltre(rubriqueId, cartes) {
+function appliquerFiltre(rubriqueId, cartes, statusNode, rubriqueLabel) {
+  let nbVisibles = 0;
   cartes.forEach((carte) => {
     const visible = rubriqueId === 'toutes' || carte.dataset.category === rubriqueId;
     carte.hidden = !visible;
+    if (visible) nbVisibles += 1;
   });
+
+  if (statusNode) {
+    const suffixe = nbVisibles > 1 ? 's' : '';
+    statusNode.textContent = rubriqueId === 'toutes'
+      ? `${nbVisibles} projet${suffixe} affiché${suffixe}.`
+      : `${nbVisibles} projet${suffixe} affiché${suffixe} dans la rubrique ${rubriqueLabel}.`;
+  }
 }
 
 function initFiltreProjets() {
   const conteneur = document.getElementById('category-filter');
+  const statusNode = document.getElementById('filter-status');
   const cartes = Array.from(document.querySelectorAll('.project-card'));
   if (!conteneur || cartes.length === 0) return;
 
@@ -49,7 +59,7 @@ function initFiltreProjets() {
     bouton.addEventListener('click', () => {
       conteneur.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', 'false'));
       bouton.setAttribute('aria-pressed', 'true');
-      appliquerFiltre(rubrique.id, cartes);
+      appliquerFiltre(rubrique.id, cartes, statusNode, rubrique.label);
     });
 
     conteneur.appendChild(bouton);

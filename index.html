@@ -10,12 +10,16 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#contenu-principal" class="skip-link">Aller au contenu principal</a>
+
   <header class="masthead">
     <p class="kicker" id="kicker">ÉCRITURE · CODE · ACCESSIBILITÉ</p>
     <h1>Baudouin<br>Van Humbeeck</h1>
     <p class="tagline">Trente ans à écrire pour être lu. Depuis quelques années, à coder pour que tout le monde puisse l'être.</p>
     <hr class="rule">
   </header>
+
+  <main id="contenu-principal">
 
   <section class="chapo">
     <p>
@@ -32,6 +36,7 @@
     <h2 id="projects-heading">Projets (sélection non exhaustive)</h2>
     <!-- Peuplé par script.js : boutons de filtre par rubrique (amélioration progressive) -->
     <nav class="category-filter" id="category-filter" aria-label="Filtrer les projets par rubrique"></nav>
+    <p class="filter-status visually-hidden" id="filter-status" role="status" aria-live="polite"></p>
 
     <div class="project-grid">
 
@@ -140,6 +145,8 @@
       <p>HTML/CSS, JavaScript/TypeScript, Python, Svelte, notions de Rust</p>
     </div>
   </section>
+
+  </main>
 
   <footer class="masthead-foot">
     <div class="foot-col">
