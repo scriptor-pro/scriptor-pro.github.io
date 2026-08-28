@@ -180,11 +180,15 @@ a:focus-visible, button:focus-visible {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-accent);
+  line-height: 1.5;
+  min-height: 2.25rem;
   margin: 0;
 }
 
 .project-card h3 {
   font-size: 1.25rem;
+  line-height: 1.2;
+  min-height: 3rem;
   margin: 0;
   display: flex;
   align-items: center;
